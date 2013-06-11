@@ -1,0 +1,48 @@
+body { font-family: open_sanslight,​Helvetica,​Arial,​sans-serif; background: #f6efe1; color: #333; text-align: 'center'; font-size: 100%; line-height: 1.5em;}
+#frame {text-align: left; width: 48em; margin: 3em auto; background: #fdf8f4; padding: 2em 6em; border-top: 2em solid #252421; position: relative;}
+.nav {position: absolute; top: 1em; right: 2em; text-align: right; }
+.nav ul, .nav li {list-style: none; display: inline; margin: 0; padding: 0;}
+.nav a {text-transform: uppercase; background: none; border: none; margin: 0 0.5em 0 0; font-size: 87.5%; font-weight: bold; padding: 0.5em 0.75em;}	
+.nav a:hover {background: #f6efe1;}
+.nav .selected a {background: #333; color: #fdf8f4;}
+p {line-height: 1.5em; margin: 0 0 1.5em;}	
+#work {clear: both;}
+#me, #you, .L, .R {float: left; width: 47%; }
+#you, .R {float: right;}
+.L, .R {text-align: center;}
+
+a {text-decoration: none; color: #333; border-bottom: 2px solid #f5dfac;} 
+a.fancybox-item { border-bottom: none; }
+
+h1 {font-size: 2.5em; line-height: 1em; margin: 1.111em 0 .3em; font-weight: bold;}
+h2 {font-size: 2em; line-height: 1.25em; margin: 1.125em 0 .375em; font-weight: normal;}
+h3 {font-size: 1.5em; line-height: 1.25em; margin: 1.5em 0 .5em; font-weight: bold;}
+.contents h3 { padding: 1em 0; border-top: 1em solid #f6efe1;}
+h4 {font-size: 1.1667em; line-height: 1.5em; margin: 1.929em 0 0;}
+.contents h4 { font-weight: bold; text-transform: lowercase; font-variant: small-caps;}
+strong {font-weight: bold;}
+acronym, abbr {font-variant: small-caps; text-transform: lowercase; font-weight: bold;}
+.center {text-align: center;}
+#work h2 em {font-style: normal; background: #f6efe1; display: block; padding: 0.25em;}
+blockquote {background: #f6efe1; border-left: 1em solid #f5dfac; margin: 0 1em 1.5em; padding: 1.5em 2em; font-style: italic; font-size: 1.1em;}
+cite {display: block; text-align: right; font-style: normal; font-weight: bold; font-size: 0.8em;}	
+.large {font-size: larger;}	
+.small {font-size: smaller;}
+#contact { width: 24em; margin: 0 auto; border: 1em solid #f6efe1; padding: 0.25em 1.5em 1em;}
+.right{float: right; margin: 0 0 0.5em 0.5em;}
+.photo {border: 0.5em solid #FFF;}
+.clear {clear: both;}
+
+a.fancybox { border-bottom: 0px }
+div > p > a > img:hover { border: 10px solid #333333; }
+div > p > a > img { border: 10px solid #fdf8f4; }
+
+@font-face {
+    font-family: 'open_sanslight';
+    src: url('fonts/opensans-light-webfont.eot');
+    src: url('fonts/opensans-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/opensans-light-webfont.woff') format('woff'),
+         url('fonts/opensans-light-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
