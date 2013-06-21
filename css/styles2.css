@@ -1,0 +1,100 @@
+@font-face {
+    font-family: 'open_sanslight';
+    src: url('fonts/opensans-light-webfont.eot');
+    src: url('fonts/opensans-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/opensans-light-webfont.woff') format('woff'),
+         url('fonts/opensans-light-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body { 
+  font-family: open_sanslight,​Helvetica,​Arial,​sans-serif; 
+  background: #f6efe1; 
+  color: #333; 
+  text-align: 'center'; 
+  font-size: 100%; 
+  line-height: 1.5em;
+}
+
+main {
+  text-align: left; 
+  width: 48em; 
+  margin: 3em auto; 
+  background: #fdf8f4; 
+  padding: 1em 6em; 
+  border-top: 2em solid #252421; 
+}
+
+main header h1 img { padding-left: 1em; } 
+
+nav {
+  width: 100%;
+}
+
+main header nav { position: relative; right: -4em;}
+main header nav ul { float: right; }
+main header  nav ul li {
+  list-style: none; 
+  display: inline; 
+}
+
+nav a {
+  text-transform: uppercase; 
+  background: none; 
+  border: none; 
+  margin: 0 0.5em 0 0; 
+  font-size: 87.5%; 
+  font-weight: bold; 
+  padding: 0.5em 0.75em;
+}  
+nav a:hover { background: #FFFFFF; }
+nav .selected a { background: #333; color: #fdf8f4; }
+
+article h3 { padding: 1em 0; border-top: 1em solid #f6efe1; }
+article h4 { font-weight: bold; text-transform: lowercase; font-variant: small-caps;}
+
+.L, .R { width: 47%; }
+.L { float: left; }
+.R { float: right; }
+
+p { line-height: 1.5em; margin: 0 0 1.5em; }  
+a {text-decoration: none; color: #333; border-bottom: 2px solid #f5dfac;} 
+
+h1 {font-size: 2.5em; line-height: 1em; margin: 1.111em 0 .3em; font-weight: bold;}
+h2 {font-size: 2em; line-height: 1.25em; margin: 1.125em 0 .375em; font-weight: normal;}
+article h1, footer h1 {font-size: 1.5em; line-height: 1.25em; margin: 1.5em 0 .5em; font-weight: bold;}
+article h2 { 
+  font-variant: small-caps; 
+  font-weight: bold; 
+  text-transform: lowercase; 
+  font-size: 1.1667em;
+  line-height: 1.5em;
+  margin: 1.929em 0 0;  
+}
+
+footer {
+  width: 24em; 
+  margin: 0 auto; 
+  border: 1em solid #f6efe1; 
+  padding: 0.25em 1.5em 1em;
+}
+
+.right { float: right; }
+strong { font-weight: bold; }
+.large {font-size: larger;} 
+.small {font-size: smaller;}
+
+/* clearfix */
+ 
+.group:before,
+.group:after {
+  content: "";
+  display: table;
+}
+.group:after {
+  clear: both;
+}
+.group {
+  zoom: 1;
+}

@@ -1,348 +1,310 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!DOCTYPE html>
+<html lang="pl">
 <head>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-
-	<title>Projects</title>
-	
-	<meta name="Copyright" content="Copyright (c) 2012 by Szymon. All Rights Reserved" />
-	<meta name="author" content="Szymon" />
-	<meta name="ROBOTS" content="NOINDEX, NOFOLLOW" />
-
-  <link rel="stylesheet" href="css/jquery.fancybox.css" type="text/css" media="screen" />
-  <link href="css/styles.css" media="all" rel="stylesheet" type="text/css" />
+  <meta charset="utf-8"/>
+  <meta name="author" content="Szymon" />
+  <meta name="ROBOTS" content="NOINDEX, NOFOLLOW" />  
+  <title>Projects</title>
+  <link href="css/normalize.css" rel="stylesheet" />  
+  <link rel="stylesheet" href="css/jquery.fancybox.css" type="text/css" media="screen" />  
+  <link href="css/styles.css" rel="stylesheet" />
 </head>
 <body>
-<div id="frame">
-    <h1>Projects</h1>
-    <h2>The information provided here shows some of my projects. Click on screenshot to enlarge it.</h2>
-    <ul class="nav">
-        <li><a href="index.html">Introduction</a></li>
-	<li class="selected"><a href="portfolio.html">Projects</a></li>
-    </ul>
-        <h3>Deutsche Aussprache</h3>
-        <p>This is a web site where you can actively pracitce your german pronunciation (deutsche aussprache).
-          Both graphics and the way of teaching are not mine.
-          I have just made internet front-end from these.
-          There is a bit javascript code behind exercise (ubungen) and test parts.
-          Investor required to make it work in everything. Service is public and free. <a href="http://www.deutscheaussprache.com/">Take a closer look.</a></p>
-        <div class="L">
-                <p><a class='fancybox' rel="Deutsche Aussprache" title="Deutsche Aussprache" href="images/portfolio/pde-home.png"><img src="images/portfolio/pde-home_sm.png" alt="Customer's basic form" /></a><br />
-                        <strong>Deutsche Aussprache</strong><br />
-                        Home Page
-                        <br />
-                </p>
-                <p><a class="fancybox" rel="Deutsche Aussprache" title="Deutsche Aussprache" href="images/portfolio/pde-test.png"><img src="images/portfolio/pde-test_sm.png" alt="Contact person form" /></a><br />
-                        <strong>Deutsche Aussprache</strong><br />
-                        Test result subpage
-                        <br />
-                </p>
-        </div>
-        <div class="R">
-                <p><a class="fancybox" rel="Deutsche Aussprache" title="Deutsche Aussprache" href="images/portfolio/pde-exercise.png"><img src="images/portfolio/pde-exercise_sm.png" alt="Customer's sales history" /></a><br />
-                        <strong>Deutsche Aussprache</strong><br />
-                        Exercise (ubungen) subpage
-                        <br />
-                </p>
+  <main>
+    <header>
+      <nav class='group'>
+        <ul>
+          <li><a href="/index.html">About me</a></li>
+          <li class="selected"><a href="/portfolio.html">Projects</a></li>
+        </ul>    
+      </nav>
 
-                <p><a class="fancybox" rel="Deutsche Aussprache" title="Deutsche Aussprache" href="images/portfolio/pde-administration.png"><img src="images/portfolio/pde-administration_sm.png" alt="Customer's telemarketing activity" /></a><br />
-                        <strong>Deutsche Aussprache</strong><br />
-                        CMS administration panel
-                        <br />
-                </p>
-        </div>
-        <div class="clear"></div>
-        <h3>Chmura Klett</h3>
-        <p><span>
+      <h1>Projects</h1>
+      <h2>The information provided here shows some of my projects. Click on screenshot to enlarge it.</h2>
+    </header>
+    <section class='group centered'>
+      <h3><em>Cloud and Multimedia Klett</em></h3>
+        <p>
           <a href="http://www.klett.de">Klett Group</a> is one of the largest and most respected educational publishers in Europe.
           They create textbooks for all types of schools since 1898.
-          I have developed simple web service which supports teachers, who use Klett textbooks.
-          It provides teaching aids (including audio content).
-          Service is public and free. <a href='http://www.chmura.klett.pl'>Take a closer look.</a></span>
+          I have developed couple of simple web services for them.<BR/>One called <b>Chmura Klett</b> (in translation 'Cloud Klett') which supports teachers which are using Klett's textbooks.
+          It provides teaching aids for these books. Content includes audio lessons, .PDF files (like tests), pictures and .ZIPs.  It is sotred via S3. It includes audio streaming technic. Service is public and free but you probably need Klett's paper book. <a href='http://www.chmura.klett.pl'>Take a closer look.</a><BR/>Second called <b>Multimedia Klett</b> which is a catalogue and serach engine for all Klett's on-line materials spreaded widely thrugh internet like: interactive exercises, claud (described before), e-books, movies or e-shop. <a href='http://www.multimedia.klett.pl'>Take a closer look.</a>
         </p>
-        <div class="L">
-          <p><a class='fancybox' rel="klett" title="Chmura Klett - home page" href="images/portfolio/klett-front.png"><img src="images/portfolio/klett-front_sm.png" alt="Chmura Klett - home page" /></a><br />
+        <article class="L">
+          <p><a class='fancybox' data-fancybox-group="klett" title="Chmura Klett - home page" href="images/portfolio/klett-front.png"><img src="images/portfolio/klett-front_sm.png" alt="Chmura Klett - home page" /></a>
             <strong>Chmura Klett</strong><br />
               Home page
               <br />
           </p>
-	</div>
-        <div class="R">
-          <p><a class='fancybox' rel="klett" title="Chmura Klett - audio page" href="images/portfolio/klett-audio.png"><img src="images/portfolio/klett-audio_sm.png" alt="Chmura Klett - audio page" /></a><br />
+          <p><a class='fancybox' data-fancybox-group="klett" title="Chmura Klett - audio page" href="images/portfolio/klett-audio.png"><img src="images/portfolio/klett-audio_sm.png" alt="Chmura Klett - audio page" /></a>
             <strong>Chmura Klett</strong><br />
             Page with audio lessons in relation to the book's chapter
             <br />
           </p>
-        </div>
+        </article>
+        <article class="R">
+          <p><a class='fancybox' data-fancybox-group="klett" title="Multimedia Klett - home page" href="images/portfolio/multimedia-home.png"><img src="images/portfolio/multimedia-home_sm.png" alt="Multimedia Klett - home page" /></a>
+            <strong>Multimedia Klett</strong><br />
+            Home page
+            <br />
+          </p>
+          <p><a class='fancybox' data-fancybox-group="klett" title="Multimedia Klett - search resource page" href="images/portfolio/multimedia-search.png"><img src="images/portfolio/multimedia-search_sm.png" alt="Multimedia Klett - search resource page" /></a>
+            <strong>Multimedia Klett</strong><br />
+            Search resource page
+            <br />
+          </p>          
+        </article>
+    </section>
 
-    <div class="clear"></div>
-    <div id="work">
-        <h3>Clar System</h3>
-        <p>Consortium Clar System S.A. is one of the largest companies in Poland specializing in cleaning services. It employs nearly 2,500 people and enjoys the trust of over 200 regular customers. I have developed a couple of back-end applications. It supports both operations (called Sekodok) and employee data management.
+    <section class='group centered'>
+        <h3><em>Ecowater</em></h3>
+        <p>Ecowater is one of the world's largest manufacturers of domestic water treatment systems. They have nearly 90 years of experience in implementing new technology. They provide technical support for installed devices. This is my most advanced CMS so I haven't put any other CMS in this portfolio. The service has three parts. Front end pages include: products, news, promotions, inquiries, articles, interesting facts about water and more. Partners' zone includes: video tutorials for service, simple shop with gadgets, download documents section and more. The last part is CMS in the back-end, to rule them all. As you can see on the first screenshot service has responsive design. Ecowater graphic design is not mine. Many people have worked to fill the site's content. Take a closer look with language versions as well as site locations: <a href="http://www.ecowater.pl/">Polish</a>, <a href="http://ecowater.bg/">Bulgarian</a>, <a href="http://www.ecowatersystems.cz/">Czech</a>, <a href="http://www.ecowatersystems.lt/">Lithuanian</a> and <a href="http://www.ecowatersystems.sk/">Slovak</a>
+        
+        </p>        
+      <article class="L">
+        <p><a class='fancybox' data-fancybox-group="Ecowater" title="Ecowater" href="images/portfolio/ecowater-home.png"><img src="images/portfolio/ecowater-home_sm.png" alt="Home page with responsive layout" /></a>
+                <strong>Ecowater</strong><br />
+                Home page. Responsive design.
+                <br />
         </p>
-        <div class="L">
-            <p><a class="fancybox" rel="sekodok" title="Clar System - Sekodok" href="images/portfolio/clar-table.png">
-                <img src="images/portfolio/clar-table_sm.png" alt="Welcome page" /></a>
+        <p><a class="fancybox" data-fancybox-group="Ecowater" title="Ecowater" href="images/portfolio/ecowater-zone.png"><img src="images/portfolio/ecowater-zone_sm.png" alt="Home page in the partners' zone" /></a>
+                <strong>Ecowater</strong><br />
+                Main menu page of the partners' zone. Slovak translation.
+                <br />
+        </p>                
+        <p><a class='fancybox' data-fancybox-group="Ecowater" title="Ecowater" href="images/portfolio/ecowater-backend.png"><img src="images/portfolio/ecowater-backend_sm.png" alt="CMS backend, site tree view" /></a>
+                <strong>Ecowater</strong><br />
+                CMS backend. Site tree view. I have switched site to English language, however this site is not supposed to be in English.
+                <br />
+        </p>        
+      </article>
+      <article class="R">
+        <p><a class="fancybox" data-fancybox-group="Ecowater" title="Ecowater" href="images/portfolio/ecowater-movies.png"><img src="images/portfolio/ecowater-movies_sm.png" alt="Movies section in the partners' zone" /></a>
+                <strong>Ecowater</strong><br />
+                Movies section in the partners' zone
+                <br />
+        </p>        
+        <p><a class="fancybox" data-fancybox-group="Ecowater" title="Ecowater" href="images/portfolio/ecowater-maps.png"><img src="images/portfolio/ecowater-maps_sm.png" alt="Google map with location partners and switch bar to the CMS editor" /></a>
+                <strong>Ecowater</strong><br />
+                Google map with location of partners and switch bar to the CMS editor
+                <br />
+        </p>                
+      </article>      
+    </section>
+
+    <section class='group centered'>
+        <h3><em>Deutsche Aussprache</em></h3>
+        <p>This is a web site where you can actively pracitce your german pronunciation (deutsche aussprache).
+          Both graphics and the way of teaching are not mine concepts.
+          I have just made internet from these.
+          There is a bit javascript code behind exercise (ubungen) and test parts.
+          Investor required to make it works on smartphones and tablets too. Service is public and free. <a href="http://www.deutscheaussprache.com/">Take a closer look.</a></p>        
+      <article class="L">
+        <p><a class='fancybox' data-fancybox-group="Deutsche Aussprache" title="Deutsche Aussprache" href="images/portfolio/pde-home.png"><img src="images/portfolio/pde-home_sm.png" alt="Customer's basic form" /></a>
+                <strong>Deutsche Aussprache</strong><br />
+                Home page
+                <br />
+        </p>
+
+        <p><a class="fancybox" data-fancybox-group="Deutsche Aussprache" title="Deutsche Aussprache" href="images/portfolio/pde-test.png"><img src="images/portfolio/pde-test_sm.png" alt="Contact person form" /></a>
+                <strong>Deutsche Aussprache</strong><br />
+                Test result subpage
+                <br />
+        </p>        
+      </article>
+      <article class="R">
+        <p><a class="fancybox" data-fancybox-group="Deutsche Aussprache" title="Deutsche Aussprache" href="images/portfolio/pde-exercise.png"><img src="images/portfolio/pde-exercise_sm.png" alt="Customer's sales history" /></a>
+                <strong>Deutsche Aussprache</strong><br />
+                Exercise (ubungen) subpage
+                <br />
+        </p>
+
+        <p><a class="fancybox" data-fancybox-group="Deutsche Aussprache" title="Deutsche Aussprache" href="images/portfolio/pde-administration.png"><img src="images/portfolio/pde-administration_sm.png" alt="Customer's telemarketing activity" /></a>
+                <strong>Deutsche Aussprache</strong><br />
+                CMS administration panel
+                <br />
+        </p>        
+      </article>      
+    </section>
+
+    <section class='group centered'>
+        <h3><em>Chmura PONS</em></h3>
+        <p>After a successful implementation and growing popularity of the Chmura Klett (described in above section) the publishing house Klett has decided to launch similar service, second cloud. It's called  "Chmura PONS" (in translation: Cloud PONS). Where PONS is the name of associated publishing house. <a href="http://www.chmura.pons.pl/">Take a closer look.</a> </p>
+        <article class="L">
+            <p><a class="fancybox" data-fancybox-group="pons" title="Chmura PONS" href="images/portfolio/pons-home.png"><img src="images/portfolio/pons-home_sm.png" alt="Chmura PONS home page" width="1265" height="1072" /></a>
+                <strong>Chmura PONS</strong><br />
+        Welocme Page
+                <br />
+            </p>
+        </article>
+        <article class="R">
+            <p><a class="fancybox" data-fancybox-group="pons" title="Chmura PONS" href="images/portfolio/pons-2.png"><img src="images/portfolio/pons-2_sm.png" alt="Chmura PONS book page" width="360" height="355" /></a>
+                <strong>Chmura PONS</strong><br />
+        Book Page
+                <br />
+            </p>
+        </article>
+    </section>    
+    <section class='group centered'>
+        <h3><em>Clar System</em></h3>
+        <p><a href="http://www.clarsystem.pl">Consortium Clar System S.A.</a> is one of the largest companies in Poland specializing in cleaning services. It employs nearly 2,500 people and enjoys the trust of over 200 regular customers. I have developed a couple of internal applications. It supports both operations (called Sekodok) and employee data management.
+        </p>
+        <article class="L">
+            <p><a class="fancybox" data-fancybox-group="sekodok" title="Clar System - Sekodok" href="images/portfolio/clar-table.png">
+                <img src="images/portfolio/clar-table_sm.png" alt="Home page" /></a>
                 <strong>Clar System - Sekodok</strong><br />
                 Webpage featuring document processing, to understand what is up to in the overall process.
                 <br />
             </p>
-        </div>
-        <div class="R">
-            <p><a class="fancybox" rel="sekodok" title="Clar System - Sekodok" href="images/portfolio/clar-zglos.png"><img src="images/portfolio/clar-zglos_sm.png" alt="Clar System - Sekodok" /></a><br />
+        </article>
+        <article class="R">
+            <p><a class="fancybox" data-fancybox-group="sekodok" title="Clar System - Sekodok" href="images/portfolio/clar-zglos.png"><img src="images/portfolio/clar-zglos_sm.png" alt="Clar System - Sekodok" /></a>
                 <strong>Clar System - Sekodok</strong><br />
                 Document registration form. It supports client side validation, date picker, attachment file, etc.
                 <br />
             </p>
-        </div>
-        <div class="L">
-            <p><a class='fancybox' rel="sekodok" title="Clar System - Employees" href="images/portfolio/clar-list.png"><img src="images/portfolio/clar-list_sm.png" alt="Search details about employee" /></a><br />
+        </article>
+        <article class="L">
+            <p><a class='fancybox' data-fancybox-group="sekodok" title="Clar System - Employees" href="images/portfolio/clar-list.png"><img src="images/portfolio/clar-list_sm.png" alt="Search details about employee" /></a>
                 <strong>Clar System</strong><br />
                 This window shows search results about employees. Application provides data security level in relation to the user.
                 <br />
             </p>
-        </div>
-        <div class="R">
-            <p><a class='fancybox' rel="sekodok" title="Clar System - Sekodok" href="images/portfolio/clar-registration.png"><img src="images/portfolio/clar-registration_sm.png" alt="User registration page" /></a><br />
+        </article>
+        <article class="R">
+            <p><a class='fancybox' data-fancybox-group="sekodok" title="Clar System - Sekodok" href="images/portfolio/clar-registration.png"><img src="images/portfolio/clar-registration_sm.png" alt="User registration page" /></a>
                 <strong>Clar System</strong><br />
                 User registration page
                 <br />
             </p>
-        </div>
-        <div class="clear"></div>
-        <h3>Thule-kolejka</h3>
+        </article>
+    </section>
+    <section class='group centered'>
+      <h3><em>Thule-kolejka</em></h3>
         <p>
         Thule is an international company which offers bike, ski, snowboard, watersport, luggage and multipurpose roof racks. Thule has a major factory in Poland.
-        This simple back-end application is called "Thule – kolejka" (in translation: Thule – queue). It displays a board of the real time counters for the production people. One counter counts down time left for the worker to go and take the track's documents from the logistic department or time left to go and load the truck. Real time counters has been developed in JavaScript.
+        This simple application is called "Thule – kolejka" (in translation: Thule – queue). It displays a board of the real time counters for awaiting production people. One counter counts down time left for the worker to move on and take the track's documents from the logistic department while another counter counts down time left to move on and just load a truck. Real time counters has been developed via setTimeout() JavaScript function.
         Based on responsive features application works fine on mobile devices.
         </p>
-        <div class="L">
-            <p><a class='fancybox' rel="thule" title="Thule-kolejka" href="images/portfolio/tk-menu.png"><img src="images/portfolio/tk-menu_sm.png" alt="Thule-kolejka" /></a><br />
+        <article class="L">
+            <p><a class='fancybox' data-fancybox-group="thule" title="Thule-kolejka" href="images/portfolio/tk-menu.png"><img src="images/portfolio/tk-menu_sm.png" alt="Thule-kolejka" /></a>
                     <strong>Thule-kolejka</strong><br />
                     Main menu and main board
                     <br />
             </p>
-            <p><a class='fancybox' rel="thule" title="Thule-kolejka" href="images/portfolio/tk-archiwum.png"><img src="images/portfolio/tk-archiwum_sm.png" alt="Thule-kolejka" /></a><br />
-                <strong>Thule-kolejka</strong><br />
-                The tasks' archive
-                <br />
-            </p>
-	</div>
-        <div class="R">
-            <p><a class='fancybox' rel="thule" title="Thule-kolejka" href="images/portfolio/tk-logistyka.png"><img src="images/portfolio/tk-logistyka_sm.png" alt="Thule-kolejka" /></a><br />
+        </article>
+        <article class="R">
+            <p><a class='fancybox' data-fancybox-group="thule" title="Thule-kolejka" href="images/portfolio/tk-logistyka.png"><img src="images/portfolio/tk-logistyka_sm.png" alt="Thule-kolejka" /></a>
                 <strong>Thule-kolejka</strong><br />
                 Logistics department screen
                  <br />
             </p>
-            <p><a class='fancybox' rel="thule" title="Thule-kolejka" href="images/portfolio/tk-formularz.png"><img src="images/portfolio/tk-formularz_sm.png" alt="Thule-kolejka" /></a><br />
-                <strong>Thule-kolejka</strong><br />
-                Edit task action. Opera as a browser.
-                <br />
-            </p>
-        </div>
-        <div class="clear"></div>
-
-        <h3>SOS-PPP</h3>
-        <p>SOS-PPP is my first Customer Relationship Management system based on Ruby On Rails.
-            The application was ordered by a law firm called Forex.
-            Forex had the idea to sell legal services, such as preparation of agreements, vindication or help with establishing a company, for a small fee.
-            Their target market became small companies.
-            They soon realized that the number of customers was growing very fast.
-            They also signed an agreement with a similar company which sells different services and merged the product list with them,
-            in cooperation. The company’s Executive Manager Marek Wiśniewski said that SOS-PPP helps the company grow in a balanced way. <br />
-            For now application consists of the following modules: accounts (including history of account sales), tasks assigned, contacts in relation many to many with accounts, information about payments, telemarketers’ activity monitor, information about products, special document hosting for cooperation purposes, and the administration panel.</p>
-        <div class="L">
-                <p><a class='fancybox' rel="crm" title="CRM" href="images/portfolio/crm4.jpg"><img src="images/portfolio/crm4_sm.jpg" alt="Customer's basic form" /></a><br />
-                        <strong>CRM</strong><br />
-                        Customer's basic form
-                        <br />
-                </p>
-                <p><a class="fancybox" rel="crm" title="CRM" href="images/portfolio/crm5.jpg"><img src="images/portfolio/crm5_sm.jpg" alt="Contact person form" /></a><br />
-                        <strong>CRM</strong><br />
-                        Contact person form
-                        <br />
-                </p>
-        </div>
-        <div class="R">
-                <p><a class="fancybox" rel="crm" title="CRM" href="images/portfolio/crm3.jpg"><img src="images/portfolio/crm3_sm.jpg" alt="Customer's sales history" /></a><br />
-                        <strong>CRM</strong><br />
-                        Customer's sales history
-                        <br />
-                </p>
-
-                <p><a class="fancybox" rel="crm" title="CRM" href="images/portfolio/crm2.jpg"><img src="images/portfolio/crm2_sm.jpg" alt="Customer's telemarketing activity" /></a><br />
-                        <strong>CRM</strong><br />
-                        Customer's telemarketing activity
-                        <br />
-                </p>
-
-                <p><a class="fancybox" rel="crm" title="CRM" href="images/portfolio/crm_login.png"><img src="images/portfolio/crm_login_sm.png" alt="Login page" /></a><br />
-                        <strong>CRM</strong><br />
-                        Login page
-                        <br />
-                </p>
-        </div>
-
-        <div class="clear"></div>
-        <h3>IKHDK - forum</h3>
+        </article>
+    </section>
+    <section class='group centered'>
+        <h3><em>IKHDK - forum</em></h3>
         <p>A friend of mine asked me to prepare a forum for IKHDK (internet club of blood donating society).
         The decision to migrate was made because the previous forum (based on <a href="http://www.simplemachines.org/">Simple Machines Forum script</a>) was claimed to be permanently hacked.
         This project is not finished yet.
         </p>
-        <div class="L">
- 	    <p><a class="fancybox" rel="ikhdk" title="IKHDK - forum" href="images/portfolio/single-topic.png"><img src="images/portfolio/single-topic_sm.png" alt="IKHDK - forums (boards)" /></a><br />
+        <article class="L">
+        <p><a class="fancybox" data-fancybox-group="ikhdk" title="IKHDK - forum" href="images/portfolio/single-topic.png"><img src="images/portfolio/single-topic_sm.png" alt="IKHDK - forums (boards)" /></a>
                     <strong>IKHDK forum</strong><br />
                     Single topic page
                     <br />
             </p>
-            <p><a class="fancybox" rel="ikhdk" title="IKHDK - forum" href="images/portfolio/forum-boards.png"><img src="images/portfolio/forum-boards_sm.png" alt="IKHDK - forums (boards)" /></a><br />
+            <p><a class="fancybox" data-fancybox-group="ikhdk" title="IKHDK - forum" href="images/portfolio/forum-boards.png"><img src="images/portfolio/forum-boards_sm.png" alt="IKHDK - forums (boards)" /></a>
                     <strong>IKHDK forum</strong><br />
                     Main forums page
                     <br />
             </p>
-	</div>
-        <div class="R">
-            <p><a class="fancybox" rel="ikhdk" title="IKHDK - forum" href="images/portfolio/forum-topics.png"><img src="images/portfolio/forum-topics_sm.png" alt="IKHDK - forum topics list" /></a><br />
+    </article>
+        <article class="R">
+            <p><a class="fancybox" data-fancybox-group="ikhdk" title="IKHDK - forum" href="images/portfolio/forum-topics.png"><img src="images/portfolio/forum-topics_sm.png" alt="IKHDK - forum topics list" /></a>
                 <strong>IKHDK forum</strong><br />
                 Sample of topics list
                  <br />
             </p>
- 	    <p><a class="fancybox" rel="ikhdk" title="IKHDK - forum" href="images/portfolio/admin-forums.png"><img src="images/portfolio/admin-forums_sm.png" alt="IKHDK - forums (boards)" /></a><br />
+        <p><a class="fancybox" data-fancybox-group="ikhdk" title="IKHDK - forum" href="images/portfolio/admin-forums.png"><img src="images/portfolio/admin-forums_sm.png" alt="IKHDK - forums (boards)" /></a>
                     <strong>IKHDK forum</strong><br />
                     Forums (boards) administration page
                     <br />
             </p>
-        </div>
-	<div class="clear"></div>
-        
-        <h3>Kraina Zdrowia</h3>
-        <p>OS Commerce script implemntation. The shop with books, cards and music CDs.</p>
-        <div class="L">
-            <p><a class="fancybox" rel="kraina" title="Kraina Zdrowia" href="images/portfolio/kz-front.png"><img src="images/portfolio/kz-front.png" alt="Kraina Zdrowia home page" /></a><br />
+        </article>
+        </section>
+    <section class='group centered'>
+      <h3><em>Kraina Zdrowia</em></h3>
+        <p><a href="http://www.oscommerce.com/">osCommerce</a> script implemntation. Institute of Valeology shop for books, playing cards and audio CDs. <a href="http://www.krainazdrowia.com.pl/">Take a closer look.</a>
+         </p>
+        <article class="L">
+            <p><a class="fancybox" data-fancybox-group="kraina" title="Kraina Zdrowia" href="images/portfolio/kz-front.png"><img src="images/portfolio/kz-front_sm.png" alt="Kraina Zdrowia home page" /></a>
                 <strong>Kraina Zdrowia</strong><br />
                 Home Page
                 <br />
-            </p>
-            <p><a class="fancybox" rel="kraina" title="Kraina Zdrowia" href="images/portfolio/kz-contactpage.png"><img src="images/portfolio/kz-contactpage.png" alt="Kraina Zdrowia contact page" /></a><br />
+            </p>            
+        </article>
+        <article class="R">
+<p><a class="fancybox" data-fancybox-group="kraina" title="Kraina Zdrowia" href="images/portfolio/kz-administration.png"><img src="images/portfolio/kz-administration_sm.png" alt="Kraina Zdrowia contact page" /></a>
                 <strong>Kraina Zdrowia</strong><br />
-		Contact Page
+        Administration Panel
                 <br />
-            </p>
-        </div>
-        <div class="R">
-            <p><a class="fancybox" rel="kraina" title="Kraina Zdrowia" href="images/portfolio/kz-categorylist.png"><img src="images/portfolio/kz-categorylist.png" alt="Kraina Zdrowia category list" /></a><br />
-                <strong>Kraina Zdrowia</strong><br />
-                Category list
-                <br />
-            </p>
-            <p><a class="fancybox" rel="kraina" title="Kraina Zdrowia" href="images/portfolio/kz-administration.png"><img src="images/portfolio/kz-administration_sm.png" alt="Kraina Zdrowia contact page" /></a><br />
-                <strong>Kraina Zdrowia</strong><br />
-		Administration Panel
-                <br />
-            </p>
-        </div>
-        <div class="clear"></div>
-        <h3>Apteka Dębiecka</h3>
-        <p>Apteka Dębiecka Drugstore page</p>
-        <div class="L">
-            <p><a class="fancybox" rel="apteka" title="Apteka Dębiecka" href="images/portfolio/ad-welcomepage.png"><img src="images/portfolio/ad-welcomepage_sm.png" alt="Apteka Dębiecka home page" /></a><br />
-                <strong>Apteka Dębiecka</strong><br />
-		Welocme Page
-                <br />
-            </p>
-        </div>
-        <div class="R">
-            <p><a class="fancybox" rel="apteka" title="Apteka Dębiecka" href="images/portfolio/ad-newproducts.png"><img src="images/portfolio/ad-newproducts_sm.png" alt="Kraina Zdrowia news about products" /></a><br />
-                <strong>Apteka Dębiecka</strong><br />
-		News about the products
-                <br />
-            </p>
-        </div>
-        <div class="clear"></div>
-        <h3><a href="http://en.wikipedia.org/wikimages/Psion">Psion</a> handheld devices development</h3>
-        <p>
-        <a href="http://en.wikipedia.org/wikimages/Psion">Psion</a> is a designer and manufacturer of rugged mobile handheld computers for commercial and industrial use.
+          </p></article>
+    </section>
+    <section class='group centered'>
+      <h3><em><a href="http://en.wikipedia.org/wiki/Psion">Psion</a> handheld devices development</em></h3>
+      <p>
+        <a href="http://en.wikipedia.org/wiki/Psion">Psion</a> is a designer and manufacturer of rugged mobile handheld computers for commercial and industrial use.
         Many years ago I have developed number of office applications for these handheld computers.
-        <a href="http://en.wikipedia.org/wikimages/Psion">Psion</a> was a real precursor of mobile devices as we know nowadays.
+        <a href="http://en.wikipedia.org/wiki/Psion">Psion</a> was a real precursor of mobile devices as we know nowadays.
         These were my very first business applications.
-        </p>
-        <div class="L">
-            <p><a class="fancybox" rel="psion" title="Van selling software" href="images/portfolio/axed/sale-mmenu.png"><img src="images/portfolio/axed/sale-mmenu_sm.png" alt="Psion" /></a><br />
+      </p>
+      <article class="L">
+            <p><a class="fancybox" data-fancybox-group="psion" title="Van selling software" href="images/portfolio/axed/sale-mmenu.png"><img src="images/portfolio/axed/sale-mmenu_sm.png" alt="Psion" /></a>
                     <strong>Van selling software</strong><br />
                      Main menu
                     <br />
             </p>
-            <p><a class="fancybox" rel="psion" title="Van selling software" href="images/portfolio/axed/sale-os.png"><img src="images/portfolio/axed/sale-os_sm.png" alt="Psion" /></a><br />
+            <p><a class="fancybox" data-fancybox-group="psion" title="Van selling software" href="images/portfolio/axed/sale-os.png"><img src="images/portfolio/axed/sale-os_sm.png" alt="Psion" /></a>
                     <strong>Van selling software</strong><br />
                     Select application window
                     <br />
             </p>
-            <p><a class="fancybox" rel="psion" title="Van selling software" href="images/portfolio/axed/sale-payments.png"><img src="images/portfolio/axed/sale-payments_sm.png" alt="Psion" /></a><br />
+            <p><a class="fancybox" data-fancybox-group="psion" title="Van selling software" href="images/portfolio/axed/sale-payments.png"><img src="images/portfolio/axed/sale-payments_sm.png" alt="Psion" /></a>
                     <strong>Van selling software</strong><br />
                     Past due invoices
                     <br />
             </p>
-	</div>
-        <div class="R">
-            <p><a class="fancybox" rel="psion" title="Van selling software" href="images/portfolio/axed/sale-tura.png"><img src="images/portfolio/axed/sale-tura_sm.png" alt="Psion" /></a><br />
+      </article>
+      <article class="R">
+            <p><a class="fancybox" data-fancybox-group="psion" title="Van selling software" href="images/portfolio/axed/sale-tura.png"><img src="images/portfolio/axed/sale-tura_sm.png" alt="Psion" /></a>
                     <strong>Van selling software</strong><br />
                     Set of customers to visit
                     <br />
             </p>
-            <p><a class="fancybox" rel="psion" title="Van selling software" href="images/portfolio/axed/sale-product.png"><img src="images/portfolio/axed/sale-product_sm.png" alt="Psion" /></a><br />
+            <p><a class="fancybox" data-fancybox-group="psion" title="Van selling software" href="images/portfolio/axed/sale-product.png"><img src="images/portfolio/axed/sale-product_sm.png" alt="Psion" /></a>
                     <strong>Van selling software</strong><br />
                     Sale a product window
                     <br />
             </p>
-            <p><a class="fancybox" rel="psion" title="Van selling software" href="images/portfolio/axed/sale-options.png"><img src="images/portfolio/axed/sale-options_sm.png" alt="Psion" /></a><br />
+            <p><a class="fancybox" data-fancybox-group="psion" title="Van selling software" href="images/portfolio/axed/sale-options.png"><img src="images/portfolio/axed/sale-options_sm.png" alt="Psion" /></a>
                     <strong>Van selling software</strong><br />
                     GSM modem data transmition options
                     <br />
             </p>
-        </div>
-	<div class="clear"></div>
-        <div id="contact">
-                <h3>Need to contact me?</h3>
-                <p><strong class="large">Szymon Miedziejko</strong><br />
-                	<a href="http://pl.linkedin.com/in/szymonm" rel="nofollow">@szymonm on LinkedIn</a><br />
-	                <a href="http://twitter.com/szymon33" rel="nofollow">@szymon33 on Twitter</a>	
-		</p>
-        </div>
-        <div class="clear"></div>
-    </div>
-</div>
+      </article>
+
+    </section>    
+    <footer>
+        <h1>Need to contact me?</h1>
+        <p><strong class="large">Szymon Miedziejko</strong><br />
+          <a href="http://pl.linkedin.com/in/szymonm" rel="nofollow">@szymonm on LinkedIn</a><br />
+          <a href="http://twitter.com/szymon33" rel="nofollow">@szymon33 on Twitter</a>          
+        </p>
+    </footer>    
+  </main>  
   <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
   <script type="text/javascript" src="js/jquery.fancybox.pack.js"></script>
-  <script type="text/javascript">
-          var _gaq = _gaq || [];
-          _gaq.push(['_setAccount', 'UA-32656552-1']);
-          _gaq.push(['_trackPageview']);
-
-          (function() {
-            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-          })();
-
-          $(document).ready(function() {
-            $('.fancybox').fancybox({
-                padding : 0,
-                openEffect  : 'elastic',
-    scrolling : 'no',
-    overlayShow : true,
-    helpers	: {
-      title	: {
-        type: 'over'
-      }
-                },
-                afterLoad : function() {
-                  this.title = 'Image ' + (this.index + 1) + ' of ' + this.group.length + (this.title ? ' - ' + this.title : '');
-                }
-            });
-          });
-  </script>
+  <script type="text/javascript" src="js/app.js"></script>  
 </body>
 </html>
 
